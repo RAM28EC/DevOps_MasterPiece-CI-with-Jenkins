@@ -29,7 +29,7 @@ pipeline {
 
         stage('SonarQube Analysis'){
             steps{
-                withSonarQubeEnv('sonar') {
+                withSonarQubeEnv('sonar-env') {
                         sh '''mvn clean verify sonar:sonar \
                         -Dsonar.projectKey=devops \
                         -Dsonar.projectName='oraganization' \
