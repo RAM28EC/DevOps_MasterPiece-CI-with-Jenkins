@@ -32,7 +32,7 @@ pipeline {
                 withSonarQubeEnv('sonar') {
                         sh '''mvn clean verify sonar:sonar \
                         -Dsonar.projectKey=devops \
-                        -Dsonar.projectName='organization' \
+                        -Dsonar.projectName='oraganization' \
                         -Dsonar.host.url=http://43.205.215.172:9000 \
                         -Dsonar.login=sqp_9ea13e5d71cdf019afc843785f3dd2af69adfe6e'''
                 }
